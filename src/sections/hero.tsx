@@ -1,5 +1,6 @@
 'use client'
 
+import { CTAButton } from '@/components/cta-button'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 
@@ -12,7 +13,7 @@ export default function HeroSection() {
                     src="/images/bg-hero-mobile.webp"
                     alt="Dra. Viviane Queiroz Wenceslau - Nutricionista"
                     fill
-                    className="object-cover border border-red-500 lg:hidden"
+                    className="object-cover lg:hidden"
                     priority
                 />
                 <Image
@@ -29,7 +30,7 @@ export default function HeroSection() {
             <div className="relative z-10 h-screen px-6 lg:px-12 xl:px-20 flex flex-col justify-between">
                 {/* Mobile Layout */}
                 <div className="lg:hidden flex flex-col justify-end h-full py-8 space-y-6">
-                    <div className="bg-[#EAA98D] text-black px-4 py-2 rounded-full text-sm font-medium w-fit">
+                    <div className="bg-[#EAA98D] text-white px-4 py-2 rounded-full text-sm font-medium w-fit">
                         @vivianewenceslau.nutri
                     </div>
 
@@ -49,24 +50,7 @@ export default function HeroSection() {
                         </p>
                     </div>
 
-                    <button className="bg-primary hover:bg-teal-700 text-white px-6 py-2 rounded-lg transition-colors flex items-center gap-2 w-fit">
-                        Agendar Consulta
-                        <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M7 17L17 7M17 7H7M17 7V17"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                            />
-                        </svg>
-                    </button>
+                    <CTAButton />
                 </div>
 
                 {/* Desktop Layout - Flex version */}
@@ -76,7 +60,7 @@ export default function HeroSection() {
                             @vivianewenceslau.nutri
                         </div>
 
-                        <h1 className="text-4xl md:text-3xl xl:text-[64px] font-bold text-gray-800 leading-tight">
+                        <h1 className="text-4xl md:text-3xl xl:text-[64px] text-gray-800 leading-tight">
                             Cuidar da alimentação não é sobre restrição, é sobre{' '}
                             <span className="text-primary font-bold">
                                 aprender a viver com equilíbrio
@@ -84,30 +68,13 @@ export default function HeroSection() {
                             .
                         </h1>
 
-                        <p className="text-lg xl:text-xl text-gray-600 leading-relaxed">
+                        <p className="text-lg xl:text-3xl text-gray-600 leading-relaxed">
                             Com a <strong>Dra.Viviane Queiroz Wenceslau</strong>
                             , você aprende a ter liberdade com consciência,
                             cuidando da sua saúde de forma leve e sustentável.
                         </p>
 
-                        <button className="bg-primary hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2 w-fit">
-                            Agendar Consulta
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M7 17L17 7M17 7H7M17 7V17"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </button>
+                        <CTAButton />
                     </div>
                     {/* Badge (Selo) */}
                     <div
