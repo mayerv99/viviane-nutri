@@ -144,4 +144,17 @@
     body {
         @apply bg-background text-foreground;
     }
+
+    .badge {
+    }
+
+    @media screen and (max-width: 1919px) {
+        .badge {
+            display: none;
+        }
+    }
+
+    .font-dynalight {
+        font-family: 'DynaLight', sans-serif;
+    }
 }

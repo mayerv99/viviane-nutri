@@ -1,10 +1,16 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, IBM_Plex_Serif } from 'next/font/google'
+import { Geist, Geist_Mono, IBM_Plex_Serif, Dynalight } from 'next/font/google'
 import './globals.css'
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
     subsets: ['latin'],
+})
+
+const dynalight = Dynalight({
+    subsets: ['latin'],
+    weight: ['400'],
+    variable: '--font-dynalight',
 })
 
 const ibmPlexSerif = IBM_Plex_Serif({
@@ -32,7 +38,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexSerif.className} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexSerif.className} ${dynalight.variable} antialiased`}
             >
                 {children}
             </body>

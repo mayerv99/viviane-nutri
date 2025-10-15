@@ -6,28 +6,28 @@ import Image from 'next/image'
 
 export default function HeroSection() {
     return (
-        <section className="h-screen relative">
+        <section className="h-[90vh] relative">
             {/* Background Images */}
             <div className="absolute inset-0">
                 <Image
                     src="/images/bg-hero-mobile.webp"
                     alt="Dra. Viviane Queiroz Wenceslau - Nutricionista"
                     fill
-                    className="object-cover lg:hidden"
+                    className="w-full h-auto lg:hidden"
                     priority
                 />
                 <Image
                     src="/images/bg-hero-desktop.webp"
                     alt="Dra. Viviane Queiroz Wenceslau - Nutricionista"
                     fill
-                    className="object-cover hidden lg:block"
+                    className="hidden lg:block w-full h-auto object-cover"
                     priority
                 />
                 <div className="absolute inset-0" />
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 h-screen px-6 lg:px-12 xl:px-20 flex flex-col justify-between">
+            <div className="relative z-10 h-[90vh] px-6 lg:px-12 xl:px-20 flex flex-col justify-between">
                 {/* Mobile Layout */}
                 <div className="lg:hidden flex flex-col justify-end h-full py-8 space-y-6">
                     <div className="bg-[#EAA98D] text-white px-4 py-2 rounded-full text-sm font-medium w-fit">
@@ -60,7 +60,7 @@ export default function HeroSection() {
                             @vivianewenceslau.nutri
                         </div>
 
-                        <h1 className="text-4xl md:text-3xl xl:text-[64px] text-gray-800 leading-tight">
+                        <h1 className="text-4xl md:text-3xl xl:text-[48px] 2xl:text-[64px] text-gray-800 leading-tight">
                             Cuidar da alimentação não é sobre restrição, é sobre{' '}
                             <span className="text-primary font-bold">
                                 aprender a viver com equilíbrio
@@ -68,7 +68,7 @@ export default function HeroSection() {
                             .
                         </h1>
 
-                        <p className="text-lg xl:text-3xl text-gray-600 leading-relaxed">
+                        <p className="text-lg xl:text-3xl xl:text-[24px] text-gray-600 leading-relaxed">
                             Com a <strong>Dra.Viviane Queiroz Wenceslau</strong>
                             , você aprende a ter liberdade com consciência,
                             cuidando da sua saúde de forma leve e sustentável.
@@ -80,7 +80,7 @@ export default function HeroSection() {
                     <div
                         className={cn(
                             'bg-white/20 backdrop-blur-sm border-white/30 border shadow-lg hidden 2xl:flex items-center justify-center rounded-full',
-                            'w-72 h-72'
+                            'w-60 h-60 badge'
                         )}
                     >
                         <Image

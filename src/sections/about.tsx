@@ -82,9 +82,10 @@ export default function AboutSection() {
                             <AnimatePresence>
                                 <motion.p
                                     initial={{ opacity: 0, y: 50 }}
-                                    transition={{ delay: 0.3, duration: 0.5 }}
+                                    transition={{ delay: 0.1, duration: 0.5 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
+                                    key="paragraph-1"
                                 >
                                     A Dra. Viviane Queiroz Wenceslau é
                                     nutricionista especializada em transtornos
@@ -102,6 +103,7 @@ export default function AboutSection() {
                                     transition={{ delay: 0.5, duration: 0.5 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
+                                    key="paragraph-2"
                                 >
                                     Ela desenvolve planos personalizados que
                                     respeitam a trajetória de cada paciente,

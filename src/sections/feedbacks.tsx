@@ -1,10 +1,14 @@
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function FeedbacksSection() {
     return (
-        <div className="flex flex-col lg:gap-0 gap-10 lg:flex-row justify-center py-10 lg-px0 px-5 bg-white">
+        <div className="flex flex-col lg:gap-0 gap-10 lg:flex-row justify-center py-10 lg-px0 px-5 relative bg-[#FFEFE9]">
+            <div className="absolute -top-12 left-0 w-full h-20 lg:h-32">
+                <Image src="/images/divider-pink.svg" alt="Divisor" fill />
+            </div>
             <AnimatePresence>
                 <motion.div
                     className="xl:text-[64px] lg:text-[48] md:text-[48px] text-[30px] wrap-anywhere lg:max-w-1/3 w-full lg:text-left text-center text-gray-700"

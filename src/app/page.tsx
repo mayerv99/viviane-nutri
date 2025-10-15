@@ -2,6 +2,8 @@ import { InfiniteScrollText } from '@/components/scroll-text'
 import AboutSection from '@/sections/about'
 import FeedbacksSection from '@/sections/feedbacks'
 import HeroSection from '@/sections/hero'
+import LocationSection from '@/sections/location'
+import PricesSection from '@/sections/prices'
 import Services from '@/sections/services'
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
             <FeedbacksSection />
             <InfiniteScrollText variant="teal" reverse={true} />
             <AboutSection />
+            <PricesSection />
+            <LocationSection />
         </main>
     )
 }
